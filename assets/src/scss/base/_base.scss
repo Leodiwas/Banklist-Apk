@@ -1,0 +1,46 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+.container{
+  max-width: 1300px;
+  margin: auto;
+}
+
+a{
+    text-decoration: none;
+   color: initial;
+   &:hover{
+    color: initial;
+   }
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+}
+

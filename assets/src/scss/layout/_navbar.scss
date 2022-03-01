@@ -1,0 +1,29 @@
+.nav__bar {
+  padding: 2rem;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1450px;
+    margin: auto;
+  }
+
+  &-welcome {
+    font-size: 2.4rem;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  &-logo {
+    font-size: 4rem;
+    margin: 0 14rem 0 0;
+    letter-spacing: 0.1rem;
+  }
+
+  &-alert__box {
+    .bellicon {
+      cursor: pointer;
+    }
+  }
+}

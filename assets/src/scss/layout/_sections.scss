@@ -1,0 +1,205 @@
+//  Date
+.date__box {
+  padding: 1.2rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.8rem;
+  text-align: start;
+  background-color: #e5e5e5;
+
+  p {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+
+    span {
+      margin-left: 0.8rem;
+      color: #333;
+    }
+  }
+}
+
+// Login Box
+
+.login__box {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: none;
+
+  &-container {
+    width: 40rem;
+    padding: 1.2rem 2rem;
+    background: #fff;
+    border-radius: 0.8rem;
+    border-left: 1.8rem solid #9be15d;
+    box-shadow: 0rem 1.8rem 5rem -1.5rem rgba(25, 42, 89, 0.6);
+    position: relative;
+    z-index: 2;
+  }
+
+  &-alert-box {
+    background: rgba(255, 0, 0, 0.55);
+    padding: 2rem;
+    border-left: 1.2rem solid rgb(255, 0, 0);
+    margin: 1.2rem 2rem;
+    color: #fff;
+    border-radius: 0.2rem 0.6rem 0.6rem 0.2rem;
+    box-shadow: 0rem 1.8rem 5rem -1.5rem rgba(25, 42, 89, 0.2);
+    display: none;
+  }
+
+  &-alert {
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+  }
+
+  &-form {
+    padding: 2rem 2rem 4rem 2rem;
+
+    h2 {
+      font-size: 4rem;
+      font-weight: 500;
+      margin-bottom: 4rem;
+
+      &::after {
+        content: " ";
+        display: block;
+        background: rgb(255, 0, 0);
+        height: 0.4rem;
+        width: 4.2rem;
+        border-radius: 0.2rem !important;
+      }
+    }
+
+    input {
+      width: 100%;
+      font-size: 1.6rem;
+      font-weight: 500;
+      padding: 1rem;
+      border: none;
+      color: #333;
+      letter-spacing: 0.08rem;
+      border-bottom: 0.4rem solid #9be15d;
+      border-left: 0.4rem solid #9be15d;
+      border-radius: 0.8rem;
+      background-color: rgba(255, 255, 255, 0.4);
+      transition: all 0.5s;
+      margin-bottom: 2.8rem;
+
+      &:hover {
+        background-color: #e5e5e5;
+      }
+
+      &:focus {
+        background-color: rgba(34, 34, 34, 0.842);
+        outline: none;
+        color: #fff;
+      }
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 1rem 0;
+      text-align: center;
+      font-size: 2rem;
+      border-radius: 0.4rem;
+      font-weight: 500;
+      color: #fff;
+      background-image: linear-gradient(to top left, #39b385, #9be15d);
+      border: none;
+      outline: none;
+
+      &:hover {
+        transform: scaleX(1.02);
+        transition: all ease 0.5s;
+        background-image: linear-gradient(to top left, #36d498, #95e94c);
+      }
+    }
+  }
+}
+
+// Main Apk
+.main__apk {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #e5e5e5;
+  border-radius: 0.8rem;
+  padding: 2.2rem;
+  grid-gap: 2rem;
+
+  .moves {
+    border-radius: 0.8rem;
+    background-color: #fff;
+    grid-row: 1/3;
+    grid-column: 1/3;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
+
+    &__row {
+      padding: 1.2rem;
+      margin: 0.6rem 0.4rem;
+      border-radius: 0.6rem;
+      display: flex;
+      align-items: center;
+      border-bottom: 0.2rem solid #e5e5e5;
+      cursor: pointer;
+
+      &-deposit,
+      &-withdrawl {
+        font-size: 1.4rem;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+        color: #fff;
+        padding: 0.4rem 1.4rem;
+        border-radius: 0.8rem;
+        text-align: center;
+      }
+
+      &-deposit {
+        background-color: #66c873;
+      }
+
+      &-withdrawl {
+        background-color: #f5465d;
+      }
+
+      &-date {
+        margin-left: 1.4rem;
+      }
+
+      &-date,
+      &-value {
+        font-weight: 600;
+        font-size: 1.6rem;
+      }
+
+      &-value {
+        margin-left: auto;
+      }
+
+      &-arrow {
+        margin: 0 0.8rem;
+      }
+
+      .arrow-up {
+        fill: #f5465d;
+      }
+
+      .arrow-down {
+        fill: #66c873;
+      }
+
+      &:hover {
+        transition: all ease 0.5s;
+        transform: scale(1.03);
+        box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.8);
+        background-color: #fff;
+      }
+    }
+  }
+}
