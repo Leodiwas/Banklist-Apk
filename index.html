@@ -35,8 +35,31 @@
     <main class="main">
       <div class="main-container">
         <!-- Date -->
-        <section class="date__box">
-          <p>As of <span class="date">2022/01/01</span></p>
+        <section class="top__bar">
+          <div class="top__bar-left">
+            <svg
+              width="44"
+              height="44"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.3"
+                d="M12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20C16.42 20 20 16.42 20 12C20 7.58 16.42 4 12 4ZM16.25 16.15L11 13V7H12.5V12.25L17 14.92L16.25 16.15Z"
+                fill="#fff"
+              />
+              <path
+                d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z"
+                fill="#9be15d"
+              />
+            </svg>
+            <span class="date">2022/01/01</span>
+          </div>
+
+          <div class="top__bar-right">
+            <form action="" class="top__bar-right-form"></form>
+          </div>
         </section>
 
         <!-- login box -->
@@ -107,8 +130,104 @@
             </div>
           </div>
 
+          <!-- Balance -->
+          <section class="transfer__balance">
+            <div class="transfer__balance-about">
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 12L5.41 13.41L11 7.83V20H13V7.83L18.58 13.42L20 12L12 4L4 12Z"
+                  fill="white"
+                />
+              </svg>
+
+              <p>Send Money</p>
+            </div>
+            <p class="transfer__balance-title">Enter the Ammount</p>
+            <p class="transfer__balance-rate">
+              Conversion rate includes fee of 12%
+            </p>
+            <form class="transfer__balance-form">
+              <label for="" class="transfer__balance-form-label"
+                >SEND TO:
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  class="svg-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM5.07 16.28C5.5 15.38 8.12 14.5 10 14.5C11.88 14.5 14.51 15.38 14.93 16.28C13.57 17.36 11.86 18 10 18C8.14 18 6.43 17.36 5.07 16.28ZM16.36 14.83C14.93 13.09 11.46 12.5 10 12.5C8.54 12.5 5.07 13.09 3.64 14.83C2.62 13.49 2 11.82 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 11.82 17.38 13.49 16.36 14.83ZM10 4C8.06 4 6.5 5.56 6.5 7.5C6.5 9.44 8.06 11 10 11C11.94 11 13.5 9.44 13.5 7.5C13.5 5.56 11.94 4 10 4ZM10 9C9.17 9 8.5 8.33 8.5 7.5C8.5 6.67 9.17 6 10 6C10.83 6 11.5 6.67 11.5 7.5C11.5 8.33 10.83 9 10 9Z"
+                    fill="#38A576"
+                  />
+                </svg>
+                <input
+                  class="transfer__balance-form-input"
+                  type="text"
+                  placeholder="Enter UserId"
+                  required
+                />
+              </label>
+
+              <label for="" class="transfer__balance-form-label"
+                >RECEIVER GETS:
+                <svg
+                  width="34"
+                  height="34"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="svg-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.3"
+                    d="M12 4C7.59 4 4 7.59 4 12C4 16.41 7.59 20 12 20C16.41 20 20 16.41 20 12C20 7.59 16.41 4 12 4ZM13.23 17.33V19H10.9V17.31C9.4 17 8.13 16.03 8.04 14.34H9.75C9.84 15.26 10.47 15.98 12.07 15.98C13.78 15.98 14.17 15.12 14.17 14.59C14.17 13.86 13.78 13.18 11.83 12.72C9.66 12.19 8.17 11.3 8.17 9.51C8.17 8 9.39 7.03 10.89 6.7V5H13.23V6.71C14.86 7.1 15.67 8.34 15.72 9.68H14.01C13.97 8.71 13.45 8.04 12.07 8.04C10.76 8.04 9.97 8.63 9.97 9.47C9.97 10.2 10.54 10.69 12.31 11.14C14.08 11.6 15.97 12.36 15.97 14.56C15.96 16.16 14.76 17.04 13.23 17.33Z"
+                    fill="#fff"
+                  />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12.31 11.14C10.54 10.69 9.97 10.2 9.97 9.47C9.97 8.63 10.76 8.04 12.07 8.04C13.45 8.04 13.97 8.7 14.01 9.68H15.72C15.67 8.34 14.85 7.11 13.23 6.71V5H10.9V6.69C9.39 7.01 8.18 7.99 8.18 9.5C8.18 11.29 9.67 12.19 11.84 12.71C13.79 13.17 14.18 13.86 14.18 14.58C14.18 15.11 13.79 15.97 12.08 15.97C10.48 15.97 9.85 15.25 9.76 14.33H8.04C8.14 16.03 9.4 16.99 10.9 17.3V19H13.24V17.33C14.76 17.04 15.96 16.17 15.97 14.56C15.96 12.36 14.07 11.6 12.31 11.14Z"
+                    fill="#38A576"
+                  />
+                </svg>
+
+                <input
+                  class="transfer__balance-form-input"
+                  type="number"
+                  placeholder="Enter Money"
+                  required
+                  maxlength="10"
+                />
+              </label>
+
+              <div class="transfer__balance-form-btns">
+                <button class="transfer-btn" type="submit">transfer</button>
+                <button type="reset" class="transfer-reset">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.6498 2.35C12.1998 0.9 10.2098 0 7.99977 0C3.57977 0 0.00976562 3.58 0.00976562 8C0.00976562 12.42 3.57977 16 7.99977 16C11.7298 16 14.8398 13.45 15.7298 10H13.6498C12.8298 12.33 10.6098 14 7.99977 14C4.68977 14 1.99977 11.31 1.99977 8C1.99977 4.69 4.68977 2 7.99977 2C9.65977 2 11.1398 2.69 12.2198 3.78L8.99977 7H15.9998V0L13.6498 2.35Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </section>
+
           <!-- Credit card -->
-          <div class="credit_card">
+          <section class="credit_card">
             <div class="credit_card-title">
               <h2>Current Balance</h2>
               <div class="credit_card-chip">
@@ -462,7 +581,7 @@
                 </svg>
               </div>
             </div>
-          </div>
+          </section>
         </section>
       </div>
     </main>
